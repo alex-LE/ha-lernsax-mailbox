@@ -4,9 +4,9 @@
   "codeowners": [],
   "config_flow": true,
   "documentation": "https://github.com/alex-LE/ha-lernsax-mailbox",
-  "issue_tracker": "https://github.com/alex-LE/ha-lernsax-mailbox/issues",
   "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/alex-LE/ha-lernsax-mailbox/issues",
   "quality_scale": "bronze",
-  "version": "0.2.0",
-  "requirements": []
+  "requirements": [],
+  "version": "0.2.0"
 }
