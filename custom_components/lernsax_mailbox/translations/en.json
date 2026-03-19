@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up LernSax Mailbox",
+        "description": "Add one LernSax account. Multiple accounts are represented as multiple Home Assistant config entries.",
+        "data": {
+          "email": "Email / login",
+          "password": "Password",
+          "api_url": "API URL",
+          "scan_interval_minutes": "Polling interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Login failed.",
+      "cannot_connect": "Could not connect to LernSax."
+    },
+    "abort": {
+      "already_configured": "This account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "LernSax Mailbox options",
+        "data": {
+          "api_url": "API URL",
+          "scan_interval_minutes": "Polling interval (minutes)"
+        }
+      }
+    }
+  }
+}

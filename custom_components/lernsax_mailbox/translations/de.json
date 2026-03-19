@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "LernSax Mailbox einrichten",
+        "description": "Lege ein LernSax-Konto an. Mehrere Konten werden in Home Assistant als mehrere Config Entries angelegt.",
+        "data": {
+          "email": "E-Mail / Login",
+          "password": "Passwort",
+          "api_url": "API-URL",
+          "scan_interval_minutes": "Prüfintervall (Minuten)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Anmeldung fehlgeschlagen.",
+      "cannot_connect": "Verbindung zu LernSax fehlgeschlagen."
+    },
+    "abort": {
+      "already_configured": "Dieses Konto ist bereits eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "LernSax Mailbox Optionen",
+        "data": {
+          "api_url": "API-URL",
+          "scan_interval_minutes": "Prüfintervall (Minuten)"
+        }
+      }
+    }
+  }
+}
