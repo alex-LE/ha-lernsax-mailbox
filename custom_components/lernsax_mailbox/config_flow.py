@@ -78,7 +78,7 @@ class LernsaxMailboxConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @callback
     def async_get_options_flow(config_entry: config_entries.ConfigEntry):
         """Return the options flow handler."""
-        return LernsaxMailboxOptionsFlow(config_entry)
+        return LernsaxMailboxOptionsFlow()
 
     def _build_schema(self, user_input: Mapping[str, Any] | None = None) -> vol.Schema:
         """Build the setup form schema."""
@@ -115,11 +115,8 @@ class LernsaxMailboxConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         )
 
 
-class LernsaxMailboxOptionsFlow(config_entries.OptionsFlow):
+class LernsaxMailboxOptionsFlow(config_entries.OptionsFlowWithReload):
     """LernSax Mailbox options flow."""
-
-    def __init__(self, config_entry: config_entries.ConfigEntry) -> None:
-        self.config_entry = config_entry
 
     async def async_step_init(self, user_input: dict[str, Any] | None = None):
         """Manage integration options."""
